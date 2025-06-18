@@ -14,8 +14,8 @@ The easiest way to deploy this Bot
 
 ### Support 
 
-<p align="center"><a href="https://t.me/About_Zain"> <img src="https://img.shields.io/badge/Meta%20Void%20Support-pink?style=for-the-badge" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://t.me/About_Zain"> <img src="https://img.shields.io/badge/About%20Zain%20Support-pink?style=for-the-badge" width="220" height="38.45"/></a></p>
 
-<p align="center"><a href="https://t.me/About_Zain"> <img src="https://img.shields.io/badge/Meta%20Void%20Channel-blue?style=for-the-badge" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://t.me/About_Zain"> <img src="https://img.shields.io/badge/About%20Zain%20Channel-blue?style=for-the-badge" width="220" height="38.45"/></a></p>
 
 ## © Copyright - @Uff_Zainu
