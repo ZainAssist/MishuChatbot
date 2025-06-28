@@ -9,12 +9,12 @@
             "description": "mongo db url here",
             "required": true
         },
-        "API_ID": {
-            "description": "telegram api id here",
+        "GEMINI_API_KEY": {
+            "description": "gemini api id here",
             "required": true
         },
-        "API_HASH": {
-            "description": "telegram api hash here",
+        "LOG_CHANNEL_ID": {
+            "description": "telegram log channel here",
             "required": true
         }
     },
