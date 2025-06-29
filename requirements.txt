@@ -2,3 +2,9 @@ aiogram==3.20.0
 motor==3.7.1
 aiohttp
 pymongo==4.13.2
+pyrogram
+pymongo
+requests
+dnspython
+tgcrypto==1.2.2
+asyncio
