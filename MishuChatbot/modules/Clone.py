@@ -24,7 +24,7 @@ async def clone_txt(client, message):
         bot_token = message.text.split("/clone", 1)[1].strip()
         mi = await message.reply_text("Please wait while I check the bot token.")
         try:
-            ai = Client(bot_token, API_ID, API_HASH, bot_token=bot_token, plugins=dict(root="RISHUCHATBOT/mplugin"))
+            ai = Client(bot_token, API_ID, API_HASH, bot_token=bot_token, plugins=dict(root="MishuChatbot/mplugin"))
             await ai.start()
             bot = await ai.get_me()
             bot_id = bot.id
@@ -84,7 +84,7 @@ async def clone_txt(client, message):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @THE_VIP_BOY_OP for assistance**"
+                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @Uff_Zainu for assistance**"
             )
     else:
         await message.reply_text("**Provide Bot Token after /clone Command from @Botfather.**\n\n**Example:** `/clone bot token paste here`")
@@ -143,7 +143,7 @@ async def restart_bots():
         
         async def restart_bot(bot):
             bot_token = bot["token"]
-            ai = Client(bot_token, API_ID, API_HASH, bot_token=bot_token, plugins=dict(root="RISHUCHATBOT/mplugin"))
+            ai = Client(bot_token, API_ID, API_HASH, bot_token=bot_token, plugins=dict(root="MishuChatbot/mplugin"))
             try:
                 await ai.start()
                 bot_info = await ai.get_me()
