@@ -4,14 +4,14 @@ import importlib
 from flask import Flask
 import threading
 import config
-from MishuChatbot import MPLUGIN
+from MishuChatbot import ID_CHATBOT
 from pyrogram import idle
 from pyrogram.types import BotCommand
 from config import OWNER_ID
 from MishuChatbot import LOGGER, MishuChatbot, userbot, load_clone_owners
-from MishuChatbot.mplugin import ALL_MPLUGIN
-from MishuChatbot.mplugin.Clone import restart_bots
-from MishuChatbot.mplugin.Id_Clone import restart_idchatbots
+from MishuChatbot.modules import ALL_MODULES
+from MishuChatbot.modules.Clone import restart_bots
+from MishuChatbot.modules.Id_Clone import restart_idchatbots
 
 async def anony_boot():
     try:
@@ -38,13 +38,13 @@ async def anony_boot():
     except Exception as ex:
         LOGGER.error(ex)
 
-    for all_mplugin in ALL_MPLUGIN:
-        importlib.import_mplugin("MishuChatbot.mplugin." + all_mplugin)
-        LOGGER.info(f"Successfully imported : {all_mplugin}")
+    for all_module in ALL_MODULES:
+        importlib.import_module("MishuChatbot.modules." + all_module)
+        LOGGER.info(f"Successfully imported : {all_module}")
 
     
     try:
-        await RISHUCHATBOT.set_bot_commands(
+        await MishuChatbot.set_bot_commands(
             commands=[
                 BotCommand("start", "Start the bot"),
                 BotCommand("help", "Get the help menu"),
