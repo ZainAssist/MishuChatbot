@@ -1,8 +1,12 @@
-# MishuChatbot
-# About
+# 𝐌𝐢𝐬𝐡𝐮𝐂𝐡𝐚𝐭𝐛𝐨𝐭 💃🏻
+
 An Advanced Telegram Chatbot Open Sorce Code
 
-<h1 align="center">👧 Mishu – Girls BFF Chatbot 💬🤖</h1>
+</h2>
+<p align="center">
+  <img src="https://graph.org/file/60c6c87be1f1fb3cf4b1b-2c65287a7744316907.jpg">
+</p>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" />
   <img src="https://img.shields.io/badge/aiogram-Telegram%20Bot-blue?logo=telegram" />
@@ -25,14 +29,19 @@ The easiest way to deploy this Bot
 
 <p align="center"><a href="https://t.me/About_Zain"> <img src="https://img.shields.io/badge/About%20Zain%20Channel-blue?style=for-the-badge" width="220" height="38.45"/></a></p>
 
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/ZainAssist/MishuChatbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-cyan?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
 Make sure you set the following:
 
 ```env
 BOT_TOKEN=your_telegram_bot_token
-ADMIN_ID=your_numeric_user_id
-LOG_CHANNEL_ID=channel_id_for_logs
+OWNER_ID=your_numeric_user_id
+OWNER_USERNAME=user_name
 MONGO_URI=your_mongodb_uri
-GEMINI_API_KEY=your_gemini_api_key
 ```
 
 ---
@@ -40,17 +49,30 @@ GEMINI_API_KEY=your_gemini_api_key
 ### ▶️ Local Setup
 
 ```bash
-git clone https://github.com/yourusername/MishuChatbot.git
-cd MishuChatbot
-pip install -r requirements.txt
-python main.py
+- Get your [Necessary Variables](https://github.com/ZainAssist/mishuChatbot/blob/main/sample.env)
+- Upgrade and Update by :
+`sudo apt-get update && sudo apt-get upgrade -y`
+- Clone the repository by :
+`git clone https://github.com/ZainAssist/MishuChatbot && cd MishuChatbot`
+- Install requirements by :
+`pip3 install -U -r requirements.txt`
+- Fill your variables in the env by :
+`vi sample.env`<br>
+Press `I` on the keyboard for editing env<br>
+Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
+- Rename the env file by :
+`mv sample.env .env`
+- Install tmux to keep running your bot when you close the terminal by :
+`sudo apt install tmux && tmux`
+- Finally run the bot by :
+`bash start`
+- For getting out from tmux session : Press `Ctrl+b` and then `d`<br>
+━━━━━━━━━━━━━━━━━
 ```
 
 ## 🧠 Tech Stack
 
 - **Python 3.10**
-- **aiogram** for Telegram bot
-- **Gemini AI API** (Google AI)
 - **MongoDB Atlas** for memory
 - **Koyeb / Heroku / Render** for cloud deploy
 
