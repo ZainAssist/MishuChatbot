@@ -4,7 +4,7 @@ import importlib
 from flask import Flask
 import threading
 import config
-from MishuChatbot import M_PLUGIN
+from MishuChatbot import MPLUGIN
 from pyrogram import idle
 from pyrogram.types import BotCommand
 from config import OWNER_ID
@@ -38,7 +38,7 @@ async def anony_boot():
     except Exception as ex:
         LOGGER.error(ex)
 
-    for all_module in ALL_MODULES:
+    for all_mplugin in ALL_MPLUGIN:
         importlib.import_mplugin("MishuChatbot.mplugin." + all_mplugin)
         LOGGER.info(f"Successfully imported : {all_mplugin}")
 
