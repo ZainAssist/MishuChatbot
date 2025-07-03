@@ -39,7 +39,7 @@ async def anony_boot():
         LOGGER.error(ex)
 
     for all_module in ALL_MODULES:
-        importlib.import_mplugin("MishuChatbot.modules." + all_mplugin)
+        importlib.import_mplugin("MishuChatbot.mplugin." + all_mplugin)
         LOGGER.info(f"Successfully imported : {all_mplugin}")
 
     
