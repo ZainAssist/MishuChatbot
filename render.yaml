@@ -1,6 +1,3 @@
-services:
-  - type: web
-    name: MishuChatbot
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+build:
+  docker:
+    worker: Dockerfile
