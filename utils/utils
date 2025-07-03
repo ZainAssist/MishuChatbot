@@ -1,7 +1,0 @@
-# Utility functions (e.g., mood check, name memory)
-
-def save_user_name(user_id, name):
-    pass  # MongoDB logic here
-
-def get_user_name(user_id):
-    return "Mishu"
