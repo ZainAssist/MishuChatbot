@@ -295,7 +295,7 @@ async def stats(cli: Client, message: Message):
     
 from pyrogram.enums import ParseMode
 
-from RISHUCHATBOT import RISHUCHATBOT
+from MishuChatbot import MishuChatbot
 
 
 @Client.on_message(filters.command("id", prefixes=[".", "/"]))
