@@ -4,14 +4,14 @@ import importlib
 from flask import Flask
 import threading
 import config
-from MishuChatbot import ID_CHATBOT
+from MishuChatbot import MPLUGIN
 from pyrogram import idle
 from pyrogram.types import BotCommand
 from config import OWNER_ID
 from MishuChatbot import LOGGER, MishuChatbot, userbot, load_clone_owners
-from MishuChatbot.modules import ALL_MODULES
-from MishuChatbot.modules.Clone import restart_bots
-from MishuChatbot.modules.Id_Clone import restart_idchatbots
+from MishuChatbot.mplugin import ALL_MPLUGIN
+from MishuChatbot.mplugin.Clone import restart_bots
+from MishuChatbot.mplugin.Id_Clone import restart_idchatbots
 
 async def anony_boot():
     try:
@@ -39,8 +39,8 @@ async def anony_boot():
         LOGGER.error(ex)
 
     for all_module in ALL_MODULES:
-        importlib.import_module("MishuChatbot.modules." + all_module)
-        LOGGER.info(f"Successfully imported : {all_module}")
+        importlib.import_mplugin("MishuChatbot.modules." + all_mplugin)
+        LOGGER.info(f"Successfully imported : {all_mplugin}")
 
     
     try:
